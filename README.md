@@ -1,4 +1,4 @@
-# Tecnologias de Desenvolvimento em Big Data
+# PÓS BIG DATA - 2019/2: Tecnologias de Desenvolvimento em Big Data
 
 ## Classificação utilizando ML para reconhecimento de mercados da construção civil 
 - dados do censo;
