@@ -1,6 +1,8 @@
 # %%[markdown]
 # # Arquivo receita
 # Os arquivos estão formatados como Fixed Width Format.
+# endereço:
+# https://receita.economia.gov.br/orientacao/tributaria/cadastros/cadastro-nacional-de-pessoas-juridicas-cnpj/dados-publicos-cnpj
 
 # %%
 import pandas as pd
