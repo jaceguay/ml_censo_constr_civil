@@ -1,5 +1,4 @@
 # %%
-import pandas as pd
 import geopandas as gpd
 
 # %%
@@ -12,7 +11,8 @@ shp_zonas['areametros'] = (shp_zonas.area).astype(int)
 
 # %%
 # transformar crs para wgs84 (google mercator)
-shp_zonas = shp_zonas.to_crs(epsg: 4326)
+shp_zonas = shp_zonas.to_crs(4326)
+shp_zonas.crs
 
 # %%
 # shp_zonas[['CD_GEOCODI',
