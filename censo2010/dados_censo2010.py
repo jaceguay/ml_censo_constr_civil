@@ -159,10 +159,10 @@ DomicilioRenda_SC.rename(columns={
     'V008': 'rendaV008',
     'V009': 'rendaV009',
     'V010': 'rendaV010',
-    'V010': 'rendaV011',
-    'V010': 'rendaV012',
-    'V010': 'rendaV013',
-    'V011': 'rendaV014'},
+    'V011': 'rendaV011',
+    'V012': 'rendaV012',
+    'V013': 'rendaV013',
+    'V014': 'rendaV014'},
     inplace=True)
 
 DomicilioRenda_SC.iloc[:, 1:] = DomicilioRenda_SC.iloc[:, 1:].apply(
