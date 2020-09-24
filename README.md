@@ -21,13 +21,32 @@ santa_catarina_cnaes.csv
 
 ### 2. Dados IBGE
 
+Selecionadas as seguintes tabelas:
+- Domicilio01_SC.csv
+- Domicilio02_SC.csv
+- DomicilioRenda_SC.csv
+- Pessoa13_SC.csv
+    - 0 a 17 anos
+    - 18 a 24 anos
+    - 25 a 39 anos
+    - 40 a 59 anos
+    - 60 anos ou mais
+- 42SEE250GC_SIR.shp (geometria)
+    - área (m²)
+    - totalpop
+    - densidade
+
+### 3. Conjunto de dados
+
+```
+dados_selecionados_join.csv
+```
+
+### 4. Modelo ML
+
 ...
 
-### 3. Modelo ML
-
-...
-
-### 4. Viz
+### 5. Viz
 
 ...
 
