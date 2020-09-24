@@ -1,5 +1,6 @@
 # %%
 import pandas as pd
+import numpy as np
 
 # %%
 df1 = pd.read_csv('cnaes_municipios.csv', dtype={'Cod_setor': 'string'})
@@ -48,12 +49,10 @@ joined['poptotal'] = joined[['0a17',
                              '60mais']].sum(axis=1)
 
 joined['densidade'] = joined['areametros'] / joined['poptotal']
+joined['densidade'] = joined['densidade'].replace([np.inf, -np.inf], 0).astype(int)
 
 # %%
 pd.DataFrame(joined[['ncod',
-                     '41',
-                     '42',
-                     '43',
                      'domi2V050',
                      'domi2V051',
                      'domi2V052',
@@ -96,7 +95,9 @@ pd.DataFrame(joined[['ncod',
                      '60mais',
                      'areametros',
                      'poptotal',
-                     'densidade']]).to_csv(
+                     '41',
+                     '42',
+                     '43']]).to_csv(
     'dados_selecionados_join.csv', index=False)
 
 # %%
