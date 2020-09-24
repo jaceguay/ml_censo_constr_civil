@@ -38,6 +38,12 @@ Selecionadas as seguintes tabelas:
 
 ### 3. Conjunto de dados
 
+[NB geometria](https://colab.research.google.com/drive/11mcmSkhl05f-CJcrfYUO-p1N8syT551d?usp=sharing)
+
+[Censo 2010](https://colab.research.google.com/drive/1XPAxfFc50iOXS9LiV0rIXbSYYsPdLt4k?usp=sharing)
+
+[NB Dados](https://colab.research.google.com/drive/1bygceqXtRjMKnGilxGEC8kYXDb7YEItV?usp=sharing)
+
 ```
 dados_selecionados_join.csv
 ```
