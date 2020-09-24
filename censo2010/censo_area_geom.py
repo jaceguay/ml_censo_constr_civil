@@ -21,3 +21,10 @@ shp_zonas.crs
 #            'geometry']].to_file('zonas_censitarias.geojson',
 #                                 driver='GeoJSON')
 # %%
+import pandas as pd
+pd.DataFrame(shp_zonas[['CD_GEOCODI',
+                         'NM_MUNICIP',
+                         'areametros']]).to_csv(
+    'area_zonas.csv', index=False)
+
+# %%
