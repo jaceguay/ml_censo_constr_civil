@@ -1,4 +1,5 @@
 # %%
+import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from pandas import read_csv
 from sklearn import model_selection
@@ -20,9 +21,10 @@ teste_size = 0.3
 seed = 7
 
 # Criando os conjuntos de dados de treino e de teste
-array = data.iloc[:, 1:].values
-x = array[:, 0:44]
-y = array[:, 44]
+# array = data.iloc[:, 1:].values
+array = data.values
+x = array[:, 0:45]
+y = array[:, 45]
 x_treino, x_teste, y_treino, y_teste = model_selection.train_test_split(
     x, y, test_size=teste_size, random_state=seed)
 
@@ -41,7 +43,7 @@ acuraciarl = modelorl.score(x_teste, y_teste)
 print("\nAcurácia: "+str(acuraciarl*100)+"%")
 
 # %%
-modelorl.predict(data.iloc[:, 1:45])
+modelorl.predict(data.iloc[:, 0:45])
 
 # %%[markdown]
 # ## KNN:
@@ -62,7 +64,7 @@ acuraciaknn = modeloknn.score(x_teste, y_teste)
 print("\nAcurácia: "+str(acuraciaknn*100)+"%")
 
 # %%
-modeloknn.predict(data.iloc[:, 1:45])
+modeloknn.predict(data.iloc[:, 0:45])
 
 # %%[markdown]
 # ## SVM
@@ -83,7 +85,7 @@ acuraciasvm = modelosvm.score(x_teste, y_teste)
 print("\nAcurácia: "+str(acuraciasvm*100)+"%")
 
 # %%
-modelosvm.predict(data.iloc[:, 1:45])
+modelosvm.predict(data.iloc[:, 0:45])
 
 # %%[markdown]
 # ## Naive Bayes
@@ -104,7 +106,7 @@ acuracianb = modelonb.score(x_teste, y_teste)
 print("\nAcurácia: "+str(acuracianb*100)+"%")
 
 # %%
-modelonb.predict(data.iloc[:, 1:45])
+modelonb.predict(data.iloc[:, 0:45])
 
 # %%[markdown]
 # ## Árvore de decisão
@@ -125,7 +127,7 @@ acuraciaarvd = modeloarvd.score(x_teste, y_teste)
 print("\nAcurácia: "+str(acuraciaarvd*100)+"%")
 
 # %%
-modeloarvd.predict(data.iloc[:, 1:45])
+modeloarvd.predict(data.iloc[:, 0:45])
 
 # %%[markdown]
 # ## Random Forest
@@ -148,6 +150,5 @@ print("Matriz de confusão: \n"+str(matrf))
 acuraciarf = modelorf.score(x_teste, y_teste)
 print("\nAcurácia: "+str(acuraciarf*100)+"%")
 
-modelorf.predict(data.iloc[:, 1:45])
-
 # %%
+modelorf.predict(data.iloc[:, 0:45])
