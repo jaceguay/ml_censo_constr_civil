@@ -50,12 +50,31 @@ dados_selecionados_join.csv
 
 ### 4. Modelo ML
 
-...
+```python
+import pandas as pd
+import matplotlib as plt
+import seaborn as sns
+from sklearn import model_selection
+from sklearn.cluster import KMeans
+
+array = df.values
+
+x = array[:, 0:45]
+
+modelo = KMeans(n_clusters=10)
+modelo.fit(x)
+
+out = modelo.predict(x)
+
+saida = pd.DataFrame(out)
+saida['cluster'] = saida[0]
+grupos = saida.groupby(["cluster"]).count()
+grupos
+df['cluster'] = out
+```
 
 ### 5. Viz
-
-...
-
+[Mapa clusters](https://drive.google.com/file/d/1cGEHezvPfPDvMmutx9VV3ZY51MLNI3z1/view?usp=sharing)
 
 > # Projeto
 >
