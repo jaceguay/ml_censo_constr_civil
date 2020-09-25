@@ -23,3 +23,10 @@ df = gdf.merge(clusters[['ncod', 'cluster']],
 df.plot(column='cluster')
 
 # %%
+df.plot(column='cluster',
+        figsize=(25, 10))
+#plt.xlim(-54.4851, -29.2752)
+#plt.ylim(-47.9792, -25.8102)
+plt.title('Clusters', fontsize=20)
+plt.show()
+# %%
