@@ -74,7 +74,7 @@ df['cluster'] = out
 ```
 
 ### 5. Viz
-[Mapa clusters](https://drive.google.com/file/d/1cGEHezvPfPDvMmutx9VV3ZY51MLNI3z1/view?usp=sharing)
+[Mapa clusters](https://colab.research.google.com/drive/1cGEHezvPfPDvMmutx9VV3ZY51MLNI3z1)
 
 > # Projeto
 >
