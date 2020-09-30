@@ -20,13 +20,25 @@ df = gdf.merge(clusters[['ncod', 'cluster']],
                right_on='ncod')
 
 # %%
-df.plot(column='cluster')
-
-# %%
 df.plot(column='cluster',
         figsize=(25, 10))
 #plt.xlim(-54.4851, -29.2752)
 #plt.ylim(-47.9792, -25.8102)
 plt.title('Clusters', fontsize=20)
 plt.show()
+
 # %%
+# df.to_file('clusters.geojson',
+#            driver='GeoJSON')
+
+# %%[markdown]
+# SQL QGIS
+# select
+#     count(clusters.cluster) as num,
+#     clusters.NM_MUNICIP
+# from
+#     clusters
+# where
+# 	clusters.cluster = 0
+# group by
+#     clusters.NM_MUNICIP
