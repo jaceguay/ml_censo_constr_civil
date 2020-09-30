@@ -198,7 +198,7 @@ Pessoa13_SC = Pessoa13_SC[['Cod_setor',
 ```
 A próxima etapa foi criar uma tabela consolidada com todas as colunas selecionadas.
 
-A partir dos dados selecionados foi feita a identificação dos grupo:
+A partir dos dados selecionados foi feita a identificação dos grupos:
 
 ```python
 import pandas as pd
@@ -225,7 +225,7 @@ df['cluster'] = out
 
 ![mapa clusters](https://github.com/jaceguay/ml_censo_constr_civil/blob/master/clusters.png?raw=true)
 
-Os dados utilizados e scripts desenvolvidos podem ser encontrados no seguinte repositòrio:
+Os dados utilizados e scripts desenvolvidos podem ser encontrados no seguinte repositório:
 - [ml_censo_constr_civil](https://github.com/jaceguay/ml_censo_constr_civil)
 
 ## 6. Conclusão
