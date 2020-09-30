@@ -1,4 +1,14 @@
+# UNIVERSIDADE DO VALE DO ITAJAÍ – UNIVALI
 
+## Curso de Especialização em Big Data
+
+## Tecnologias de Desenvolvimento em Big Data
+
+### Alunos: Alfonso, Duarte, Eric, Jaceguay
+
+### Setembro 2019
+
+---
 
 ## 1. Definição do problema pelo cliente.
 
@@ -213,9 +223,16 @@ grupos
 df['cluster'] = out
 ```
 
+![mapa clusters](https://github.com/jaceguay/ml_censo_constr_civil/blob/master/clusters.png?raw=true)
 
 Os dados utilizados e scripts desenvolvidos podem ser encontrados no seguinte repositòrio:
 - [ml_censo_constr_civil](https://github.com/jaceguay/ml_censo_constr_civil)
+
+## 6. Conclusão
+
+----
+
+## 7. Referências
 
 Os resultados podem ser visualizados nos seguintes notebooks:
 
